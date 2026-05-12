@@ -1,0 +1,576 @@
+
+/* import font family is == Marcellus ==*/
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&amp;display=swap");
+/* import font family is == Inspiration ==*/
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&amp;display=swap");
+/* import font family is == Roboto ==*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* 01. Reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+button:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    border: 1px solid #f1f1f1;
+    -webkit-text-fill-color: #2b2d2f;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+label {
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* End of 01. Reset */
+/* 02. Global Style */
+h1 {
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 80px;
+    font-family: "Marcellus", serif;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 54px;
+    font-family: "Marcellus", serif;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 8400;
+    line-height: 41px;
+    font-family: "Marcellus", serif;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: "Marcellus", serif;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: "Marcellus", serif;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: "Marcellus", serif;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #00acc1;
+
+}
+
+button {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.hover1 {
+    border-radius: 7px;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: #2b2d2f;
+    border: 1px solid #00acc1;
+    transition: 0.5s all ease-in;
+}
+
+.hover1:hover {
+    background-color: #00acc1;
+    color: #ffffff;
+}
+
+.hover2 {
+    color: #2b2d2f;
+    transition: all 0.5s ease-in;
+}
+
+.hover3 {
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 20px 45px 20px 45px;
+    background-color: #00ACC1;
+    transition: all 0.5s ease-in;
+    border: 0.6px solid #00ACC1;
+}
+
+.hover3:hover {
+    background-color: transparent;
+    color: #00acc1;
+    border: 0.6px solid #00acc1;
+}
+
+.hover2 i {
+    padding-left: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.hover2:hover i {
+    color: #1d448e;
+    transform: translateX(50%);
+}
+
+/*Form submission modal styling*/
+.validation {
+    position: fixed;
+    background-color: #fffbed;
+    text-align: center;
+    width: 35%;
+    padding: 75px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    top: 24%;
+    z-index: 16;
+    border-radius: 25px;
+    display: none;
+    right: 32%;
+    box-shadow: 0px 25px 40px 0px #0000001a;
+}
+
+.validation i {
+    padding: 26px 30px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #ffffff;
+    background: #1141be;
+}
+
+.validation h4 {
+    text-align: center;
+    color: #ffcd06;
+    padding: 25px 0px 10px 0px;
+    text-transform: capitalize;
+}
+
+.validation h5 {
+    text-align: center;
+    color: #3e3f41;
+}
+
+/*GoBack to Home button*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #069fea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.back-to-top i {
+    display: inline-block;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-3px);
+    }
+
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+#ThreeSections-bg {
+    background: #E8F5E9;
+}
+
+
+
+
+#preloader img {
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-wrapper {
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 65px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .hover3 {
+        padding: 14px 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 959px;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 46px;
+    }
+
+    h2 {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 10px 35px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .hover3 {
+        padding: 14px 14px;
+    }
+
+    .validation {
+        width: 48%;
+        right: 27%;
+    }
+
+    /* Go Back to Home Button */
+    .scrollToTopButton.show-btn {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .validation {
+        width: 90%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 10px 35px;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .validation {
+        width: 75%;
+        right: 13%;
+        padding: 50px 35px;
+    }
+
+    .validation i {
+        padding: 20px 24px;
+        font-size: 40px;
+    }
+
+    .scrollToTopButton.show-btn {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .validation {
+        width: 90%;
+        right: 5%;
+    }
+}
+
+/* End of 02. Global Style */
